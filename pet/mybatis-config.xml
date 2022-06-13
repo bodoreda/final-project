@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+	<settings>
+		<!-- null값 -> ""가 아닌 null로 인식 설정 -->
+		<setting name="jdbcTypeForNull" value="NULL" />
+	</settings>
+
+	<!-- 별칭 설정 -->
+	<typeAliases>
+		<typeAlias type="kr.co.member.model.vo.Member" alias="m" />
+		<typeAlias type="kr.co.board.model.vo.Board" alias="b"/>
+		<typeAlias type="kr.co.board.model.vo.boardComment" alias="bc"/>
+		<typeAlias type="kr.co.board.model.vo.boardPageData" alias="bpd"/>
+		<typeAlias type="kr.co.board.model.vo.File" alias="f"/>
+		<typeAlias type="kr.co.pet.model.vo.PetRoomReserve" alias="p"/>
+		<typeAlias type="kr.co.pet.model.vo.PetBoard" alias="pb"/>
+		<typeAlias type="kr.co.pet.model.vo.PetBoardFile" alias="pbf"/>
+		<typeAlias type="kr.co.store.model.vo.PetSupplies" alias="ps"/>
+		<typeAlias type="kr.co.spa.model.vo.Spa" alias="spa"/>
+		<typeAlias type="kr.co.store.model.vo.Basket" alias="bsk"/>
+		<typeAlias type="kr.co.store.model.vo.Payment" alias="pm"/>
+		<typeAlias type="kr.co.member.model.vo.DirectMessage" alias="dm"/>
+		<typeAlias type="kr.co.event.model.vo.Event" alias="e"/>
+		<typeAlias type="kr.co.event.model.vo.EventPt" alias="ep"/>
+		<typeAlias type="kr.co.guestroom.model.vo.Guestroom" alias="g"/>
+		<typeAlias type="kr.co.guestroom.model.vo.ReservedRoom" alias="rsv"/>
+		<typeAlias type="kr.co.wedding.model.vo.WeddingHall" alias="wh"/>
+		<typeAlias type="kr.co.wedding.model.vo.WeddingReserve" alias="wr"/>
+		<typeAlias type="kr.co.promotion.model.vo.Promotion" alias="pt"/>
+	</typeAliases>
+</configuration>
